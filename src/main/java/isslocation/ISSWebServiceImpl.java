@@ -40,7 +40,7 @@ public class ISSWebServiceImpl implements ISSWebService {
       String reason = node.get("reason").asText();
       throw new RuntimeException(reason);
     }
-    String riseTime = node.get("response").get(0).get("riseTime").asText();
+    String riseTime = node.get("response").get(0).get("risetime").asText();
     return Long.parseLong(riseTime);
   }
 }
